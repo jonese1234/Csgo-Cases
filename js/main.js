@@ -84,7 +84,7 @@ function createTable() {
     let tabCellFoot = trFoot.insertCell(-1);
     tabCellFoot.colSpan = "7";
     let date = my_JSON_object["timestamp"];
-    let footerTextHtml = "Sources: <a href=\"https://github.com/jonese1234/Csgo-Case-Data\" rel=\"external\">Csgo Case Data</a> &amp; <a href=\"https://csgobackpack.net/api/\" rel=\"external\">Csgo Backpack.net</a>. Data is current as of " + date.toString();
+    let footerTextHtml = "Sources: <a href=\"https://github.com/jonese1234/Csgo-Case-Data\" rel=\"external\">Csgo Case Data</a> &amp; <a href=\"https://csgobackpack.net/api/\" rel=\"external\">Csgo Backpack.net</a>. Data is current as of " + date.toString() + " UTC";
     tabCellFoot.innerHTML = footerTextHtml;
 
     let divContainer = document.getElementById("table-container");
