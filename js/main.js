@@ -39,12 +39,12 @@ function createTable() {
   let table = document.createElement("table");
   table.className = "responsive-table";
   let caption = table.createCaption();
-  caption.innerHTML = "Csgo Weapon Case Details";
+  caption.innerHTML = "Csgo Weapon Case Details<br><div class=\"lowercap\">How this table was calculated can be <a href=\"https://github.com/jonese1234/Csgo-Case-Data#how-the-statistics-for-the-csgo-case-details-are-calculated\" rel=\"external\">found here.</a></div>";
   let thead = table.createTHead();
   let tr = thead.insertRow(-1);
   tr.className = "table-head";
   for (let i = 0; i < colNamesFormatted.length; i++) {
-    let th = document.createElement("th"); // TABLE HEADER.
+    let th = document.createElement("th");// TABLE HEADER.
     th.innerHTML = colNamesFormatted[i];
     tr.appendChild(th);
   }
